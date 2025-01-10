@@ -16,7 +16,7 @@ const MainLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => 
             <Header />
             <Sidebar />
 
-            <div className='bg-blue-500'>
+            <div>
                 {children}
             </div>
 
