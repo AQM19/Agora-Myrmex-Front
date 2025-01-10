@@ -6,6 +6,8 @@ import React from 'react'
 import { IoCloseOutline } from 'react-icons/io5'
 import LocalSwitch from '../local-switch/LocalSwitch';
 import ThemeSwitch from '../theme-switch/ThemeSwitch';
+import { BugPlay, House } from 'lucide-react';
+import { Link } from '@/i18n/routing';
 
 const Sidebar = () => {
 
@@ -59,29 +61,41 @@ const Sidebar = () => {
                 <div className='mb-10'></div>
 
                 <ul className="flex flex-col gap-2 h-full mt-10 text-aero dark:text-emerald">
-                    {/* {
-                        NavConfig.map((item, index) => (
-                            <li key={`${item.name}-${index}`}>
 
-                                <Link
-                                    href={item.href}
-                                    className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
-                                    onClick={() => closeMenu()}
-                                >
-                                    <item.icon
-                                        size={30}
-                                        className='shrink-0'
-                                    />
+                    <li>
 
-                                    <span className={`text-sm transition-opacity duration-300 font-semibold ${isExpanded ? 'opacity-100' : 'opacity-0'}`} >
-                                        {t(item.name)}
-                                    </span>
+                        <Link
+                            href={'/'}
+                            className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
+                            onClick={() => closeMenu()}
+                        >
+                            <House
+                                className='w-10'
+                            />
 
-                                </Link>
+                            <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
+                                Home
+                            </span>
 
-                            </li>
-                        ))
-                    } */}
+                        </Link>
+
+                        <Link
+                            href={'/ants'}
+                            className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
+                            onClick={() => closeMenu()}
+                        >
+                            <BugPlay
+                                className='w-10'
+                            />
+
+                            <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
+                                Ants
+                            </span>
+
+                        </Link>
+
+                    </li>
+
                 </ul>
 
             </nav>
