@@ -2,9 +2,9 @@
 
 import { useDarkModeStatus } from '@/core/services/ui/dark-mode-status.service';
 import React from 'react'
-import Header from '../../../components/ui/header/Header';
-import Sidebar from '../../../components/ui/sidebar/Sidebar';
 import Footer from '@/components/ui/footer/Footer';
+import Header from '@/components/ui/header/Header';
+import Sidebar from '@/components/ui/sidebar/Sidebar';
 
 const MainLayout = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
 
