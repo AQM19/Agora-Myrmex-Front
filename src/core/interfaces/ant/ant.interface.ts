@@ -1,10 +1,18 @@
 import { AntFounding } from "@/core/types/ant_properties/ant_founding.type";
 import { ColonyForm } from "@/core/types/ant_properties/colony_form.type";
 
-export interface Ant {
+export interface ResumeAnt {
     id: number | null,
     genus: string | null,
     species: string | null,
+}
+
+export interface GridAnt extends ResumeAnt {
+    image: string | null;
+    appointment: string | null;
+}
+
+export interface Ant extends ResumeAnt {
     common_name: string | null,
     distribution: string | null,
     colony_form: ColonyForm | null,

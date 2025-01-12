@@ -1,31 +1,29 @@
-// page.tsx
-export const revalidate = 60;
-
 import { Pagination } from '@/components';
-import AntsGridComponent from '@/components/grid/ants-grid.component';
+import AntGridCard from '@/components/cards/ant_grid_card/AntGridCard';
 import { getPaginatedAnts } from '@/core';
 import React from 'react'
 
-type PageProps = {
-    searchParams?: {
-        [key: string]: string | string[] | undefined
-    };
-};
+export const revalidate = 60;
 
-export default async function AntsPage({ searchParams }: PageProps) {
-    const page = searchParams?.page;
-
-    console.log('PAGINA DEL SP: ', page);
-
+export default async function AntsPage({ searchParams, }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+    
+    const page = (await searchParams).page
     const numberPage = page ? parseInt(page.toString()) : 1;
-
-    console.log('PAGINA DEL NUMBER PAGE: ', numberPage);
-
     const { ants, currentPage, totalPages } = await getPaginatedAnts({ page: numberPage });
 
     return (
         <>
-            <AntsGridComponent ants={ants} />
+            <div className='grid grid-cols-2 sm:grid-cols-3 gap-10 mb-10 justify-items-stretch p-5'>
+                {
+                    ants.map((ant, index) => (
+                        <AntGridCard
+                            key={index}
+                            ant={ant}
+                        />
+                    ))
+                }
+            </div>
+
             <Pagination totalPages={totalPages} />
         </>
     );

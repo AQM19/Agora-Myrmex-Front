@@ -8,8 +8,12 @@ export const routing = defineRouting({
     pathnames: {
         "/": "/",
         "/ants": {
-            en: '/ants',
-            es: '/hormigas'
+            "en": '/ants',
+            "es": '/hormigas'
+        },
+        "/ants/[id]": {
+            "en": '/ants/[id]',
+            "es": '/hormigas/[id]'
         }
     }
 });

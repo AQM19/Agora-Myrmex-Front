@@ -8,7 +8,7 @@ const AQMIcon = () => {
             href={'/'}
         >
             <Image
-                src={'./imgs/svg/AQM.svg'}
+                src={'/imgs/svg/AQM.svg'}
                 alt={'Logo de Aarón Quintanal Martín'}
                 width={40}
                 height={40}
