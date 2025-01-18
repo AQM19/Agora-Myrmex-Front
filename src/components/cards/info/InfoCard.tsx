@@ -9,7 +9,7 @@ interface Props {
 
 const InfoCard = ({ title, icon, children, className = '' }: Props) => {
     return (
-        <div className={`bg-white rounded-lg shadow-lg overflow-hidden ${className}`}>
+        <div className={`bg-white rounded-lg shadow-lg overflow-hidden h-full ${className}`}>
             <div className="bg-gray-800 px-4 py-3 flex items-center">
                 <span className="text-2xl mr-2" role="img" aria-label={title}>
                     {icon}

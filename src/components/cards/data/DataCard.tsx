@@ -18,10 +18,10 @@ const DataCard = ({ title, icon, max, min }: Props) => {
                 <h3 className="text-sm font-semibold text-white">{title}</h3>
             </div>
 
-            <div className="p-3 text-center">
+            <div className="px-3 text-center flex flex-col justify-center h-full">
                 {
                     (max !== null && min !== null) ? (
-                        <div className="flex justify-between items-end">
+                        <div className="flex justify-between items-end -mt-12">
                             <div className="text-center">
                                 <Bug className='w-16 h-16 mx-auto text-green-600' />
                                 <p className="mt-2 font-semibold text-gray-800">Max: {max} mm</p>

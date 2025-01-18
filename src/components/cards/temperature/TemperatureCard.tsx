@@ -14,7 +14,7 @@ const TemperatureCard = ({ title, max, min }: Props) => {
                 <Thermometer className=" text-red-500" />
                 <h3 className="text-sm font-semibold text-white">{title}</h3>
             </div>
-            <div className="p-3 text-center relative h-full">
+            <div className="p-3 text-center relative h-full flex flex-col justify-center">
 
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <circle cx="80" cy="20" r="30" fill="rgba(239, 68, 68, 0.1)" />
@@ -24,7 +24,7 @@ const TemperatureCard = ({ title, max, min }: Props) => {
                 {
                     (max !== null && min !== null) ? (
                         <>
-                            <div className="flex justify-between w-full mb-2 mt-4">
+                            <div className="flex justify-between items-center w-full mb-2 -mt-8">
                                 <div className="flex items-center">
                                     <ArrowUp className="w-6 h-6 mr-2 text-red-500" />
                                     <span className="text-3xl font-bold">{max}°C</span>
