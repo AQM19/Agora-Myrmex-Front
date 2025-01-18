@@ -44,7 +44,7 @@ const HumidCard = ({ title, max, min }: Props) => {
                         </>
                     ) : (
                         <div className="flex justify-center items-center mt-8">
-                            <span className="text-gray-500">No hay datos disponibles</span>
+                            <span className="text-gray-500">No hay datos</span>
                         </div>
                     )
                 }
