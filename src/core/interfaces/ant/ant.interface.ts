@@ -12,6 +12,11 @@ export interface GridAnt extends ResumeAnt {
     appointment: string | null;
 }
 
+export interface ImageAnt {
+    image: string | null;
+    appointment: string | null;
+}
+
 export interface Ant extends ResumeAnt {
     common_name: string | null,
     distribution: string | null,
