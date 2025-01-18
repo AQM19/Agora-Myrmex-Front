@@ -72,7 +72,7 @@ export const getAntByGenusAndSpecies = async (genus: string, species: string) =>
             .eq('id_ant', ant![0].id);
 
         const { data: synonyms, error: synonymsError } = await supabase
-            .from('ant_synonyms')
+            .from('synonyms')
             .select('synonym')
             .eq('id_ant', ant![0].id)
 

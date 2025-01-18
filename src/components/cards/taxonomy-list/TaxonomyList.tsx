@@ -12,7 +12,7 @@ interface Props {
 
 const TaxonomyList = ({ kingdom, phylum, class: classValue, order, family, subfamily, tribe }: Props) => {
     return (
-        <ul className="space-y-1 text-sm">
+        <ul className="space-y-1 text-sm w-3/5 mx-auto">
             <li className="flex justify-between">
                 <span className="text-gray-500">Kingdom:</span>
                 <span className="font-medium">{kingdom}</span>

@@ -28,6 +28,7 @@ const PhotoSlider = ({ photos }: Props) => {
                 width={400}
                 height={300}
                 className="w-full h-96 object-cover rounded-md"
+                title={photos[currentPhotoIndex].appointment ?? `Ant colony photo ${currentPhotoIndex + 1}`}
             />
             <button
                 className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-1.5 hover:bg-opacity-75 transition-all"

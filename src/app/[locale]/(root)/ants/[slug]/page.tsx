@@ -38,20 +38,32 @@ const AntPageById = async ({ params, }: { params: Promise<{ slug: string }> }) =
 
             <div className="grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-5 gap-4">
 
-                <div className="lg:col-span-4">
+                <div className="lg:col-span-2">
                     <InfoCard title="Colony Overview" icon="🏠">
-                        <dl className="grid grid-cols-2 gap-x-4 gap-y-2">
+                        <dl className="grid grid-cols-2 gap-x-4 gap-y-2 mx-auto">
                             <dt className="font-medium text-gray-500">Form</dt>
-                            <dd className="text-gray-900">{ant.colony_form}</dd>
+                            <dd className="text-gray-900 text-right">{ant.colony_form}</dd>
                             <dt className="font-medium text-gray-500">Founding</dt>
-                            <dd className="text-gray-900">{ant.founding}</dd>
+                            <dd className="text-gray-900 text-right">{ant.founding}</dd>
                             <dt className="font-medium text-gray-500">Size</dt>
-                            <dd className="text-gray-900">{ant.colony_size?.toLocaleString()}</dd>
+                            <dd className="text-gray-900 text-right">{ant.colony_size?.toLocaleString()}</dd>
                             <dt className="font-medium text-gray-500">Egg Development</dt>
-                            <dd className="text-gray-900">{ant.egg_development_time} days</dd>
+                            <dd className="text-gray-900 text-right">{ant.egg_development_time} days</dd>
                             <dt className="font-medium text-gray-500">Lifespan</dt>
-                            <dd className="text-gray-900">{ant.colony_lifespan} years</dd>
+                            <dd className="text-gray-900 text-right">{ant.colony_lifespan} years</dd>
                         </dl>
+                    </InfoCard>
+                </div>
+
+                <div className='lg:col-span-2 lg:col-start-3'>
+                    <InfoCard title={'Sinónimos'} icon={'📖'}>
+                        {
+                            synonyms.map((synonym, index) => (
+                                <p>
+                                    {synonym.synonym}
+                                </p>
+                            ))
+                        }
                     </InfoCard>
                 </div>
 
@@ -64,9 +76,9 @@ const AntPageById = async ({ params, }: { params: Promise<{ slug: string }> }) =
 
                 <div className="lg:col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
                     <DataCard title="Queen Size" icon="👑" max={ant.queen_size_max} min={ant.queen_size_min} />
-                    <DataCard title="Worker Size" icon="🐜" max={ant.queen_size_max} min={ant.queen_size_min} />
-                    <DataCard title="Soldier Size" icon="💪" max={ant.queen_size_max} min={ant.queen_size_min} />
-                    <DataCard title="Male Size" icon="♂️" max={ant.queen_size_max} min={ant.queen_size_min} />
+                    <DataCard title="Worker Size" icon="🐜" max={ant.worker_size_max} min={ant.worker_size_min} />
+                    <DataCard title="Soldier Size" icon="💪" max={ant.soldier_size_max} min={ant.soldier_size_min} />
+                    <DataCard title="Male Size" icon="♂️" max={ant.male_size_max} min={ant.male_size_min} />
                 </div>
 
                 <div className='lg:col-span-4 lg:col-start-1 lg:row-start-4'>
@@ -106,7 +118,7 @@ const AntPageById = async ({ params, }: { params: Promise<{ slug: string }> }) =
                         />
 
                         <div className="mt-8 pt-8 border-t border-gray-200">
-                            <h4 className="text-lg font-semibold mb-2">Taxonomy</h4>
+                            <h4 className="text-lg font-semibold mb-2 text-center">Taxonomy</h4>
                             <TaxonomyList
                                 kingdom={ant.kingdom ?? ''}
                                 phylum={ant.phylum ?? ''}
