@@ -1,4 +1,4 @@
-import { getAntById } from '@/core';
+import { getAntByGenusAndSpecies } from '@/core';
 import { notFound } from 'next/navigation'
 import React from 'react'
 import InfoCard from '@/components/cards/info/InfoCard';
@@ -10,10 +10,11 @@ import TemperatureCard from '@/components/cards/temperature/TemperatureCard';
 import HumidCard from '@/components/cards/humid/HumidCard';
 import MonthChart from '@/components/cards/month-chart/MonthChart';
 
-const AntPageById = async ({ params, }: { params: Promise<{ id: string }> }) => {
+const AntPageById = async ({ params, }: { params: Promise<{ slug: string }> }) => {
 
-    const id = (await params).id
-    const { ant, images, synonyms } = await getAntById(+id);
+    const slug = (await params).slug
+    const [genus, species] = slug.split('_');
+    const { ant, images, synonyms } = await getAntByGenusAndSpecies(genus, species);
 
     if (!ant) {
         notFound();

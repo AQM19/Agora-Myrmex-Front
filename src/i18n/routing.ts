@@ -11,9 +11,9 @@ export const routing = defineRouting({
             "en": '/ants',
             "es": '/hormigas'
         },
-        "/ants/[id]": {
-            "en": '/ants/[id]',
-            "es": '/hormigas/[id]'
+        "/ants/[slug]": {
+            "en": '/ants/[slug]',
+            "es": '/hormigas/[slug]'
         }
     }
 });

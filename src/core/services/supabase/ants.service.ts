@@ -39,23 +39,23 @@ export const getPaginatedAnts = async ({ page = 1, take = 12 }: PaginationOption
     }
 }
 
-export const getAntById = async (id: number) => {
-
+export const getAntByGenusAndSpecies = async (genus: string, species: string) => {
     try {
         const { data: ant, error: antError } = await supabase
             .from('ant_summary_table')
             .select('*')
-            .eq('id', id);
+            .eq('genus', genus)
+            .eq('species', species);
 
         const { data: images, error: imagesError } = await supabase
             .from('ant_images')
             .select('image, appointment')
-            .eq('id_ant', id);
+            .eq('id_ant', ant![0].id);
 
         const { data: synonyms, error: synonymsError } = await supabase
             .from('ant_synonyms')
             .select('synonym')
-            .eq('id_ant', id)
+            .eq('id_ant', ant![0].id)
 
         return {
             ant: ant![0] as Ant,
@@ -63,7 +63,6 @@ export const getAntById = async (id: number) => {
             synonyms: synonyms ?? []
         }
     } catch (error) {
-        throw new Error('No se pudo obtener los datos asignados al id ' + id);
+        throw new Error('No se pudo obtener los datos de la especie ' + genus + '' + species);
     }
-
 }
