@@ -1,6 +1,6 @@
 'use server'
 
-import { Ant, GridAnt, supabase } from "@/core";
+import { Ant, GridAnt, ImageAnt, supabase } from "@/core";
 
 interface PaginationOptions {
     page?: number;
@@ -59,7 +59,7 @@ export const getAntById = async (id: number) => {
 
         return {
             ant: ant![0] as Ant,
-            images: images ?? [],
+            images: images as ImageAnt[] ?? [],
             synonyms: synonyms ?? []
         }
     } catch (error) {
