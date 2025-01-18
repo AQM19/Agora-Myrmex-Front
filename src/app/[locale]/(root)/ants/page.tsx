@@ -13,6 +13,7 @@ export default function AntsPage() {
     const [isLoading, setIsLoading] = useState(true);
     const [filter, setFilter] = useState<string>('');
     const [debouncedFilter, setDebouncedFilter] = useState('');
+    const [numRegistry, setNumRegistry] = useState(12);
 
     const searchParams = useSearchParams();
     const pageString = searchParams.get('page') ?? '1';
@@ -21,7 +22,7 @@ export default function AntsPage() {
     async function fetchAnts(filter?: string) {
         setIsLoading(true);
         try {
-            const { ants, totalPages, currentPage } = await getPaginatedAnts({ page, filter });
+            const { ants, totalPages, currentPage } = await getPaginatedAnts({ page, take: numRegistry, filter });
             setCurrentPage(currentPage);
             setAnts(ants);
             setTotalPages(totalPages);
@@ -50,27 +51,46 @@ export default function AntsPage() {
         } else {
             fetchAnts();
         }
-        // Cambiar los parámetros de búsqueda (query) en la URL
-    }, [debouncedFilter, searchParams]);
+    }, [debouncedFilter, searchParams, numRegistry]);
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setFilter(event.target.value);
     };
 
+    const handleNumRegistryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setNumRegistry(+event.target.value);
+    }
+
     return (
         <section className='p-5 flex flex-col gap-4'>
 
             <div>
-                <span className='font-semibold text-lg'>Filtro de especies</span>
-                <input
-                    type="text"
-                    value={filter}
-                    onChange={handleInputChange}
-                    className='rounded-md w-full h-10 text-neutral-900 px-2'
-                    placeholder="Buscar por género o especie" />
+                <span className='font-semibold text-lg text-neutral-900 dark:text-neutral-50'>Filtro de especies</span>
+                <div className='grid grid-cols-[1fr_auto] gap-8'>
+                    <input
+                        type="text"
+                        value={filter}
+                        onChange={handleInputChange}
+                        className='rounded-md w-full h-10 text-neutral-900 px-2'
+                        placeholder="Buscar por género o especie" />
+
+                    <select
+                        name="registy"
+                        id="registry"
+                        defaultValue={12}
+                        onChange={handleNumRegistryChange}
+                        className='text-neutral-900 px-2 rounded-lg'
+                    >
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                        <option value="48">48</option>
+                        <option value="72">72</option>
+                        <option value="96">96</option>
+                    </select>
+                </div>
             </div>
 
-            <div className='grid grid-cols-2 sm:grid-cols-3 gap-10 mb-10 justify-items-stretch'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10 justify-items-stretch'>
                 {
                     ants.map((ant, index) => (
                         <AntGridCard

@@ -11,7 +11,7 @@ const AntGridCard = ({ ant }: Props) => {
     return (
         <Link href={{ pathname: '/ants/[slug]', params: { slug: `${ant.genus}_${ant.species}` } }}>
             <div
-                className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 group cursor-pointer">
+                className="relative overflow-hidden rounded-lg shadow-lg shadow-black dark:shadow-white transition-transform duration-300 ease-in-out hover:scale-105 group cursor-pointer">
                 <div className="relative h-64 w-full">
                     <Image
                         src={ant.image ?? '/imgs/svg/placeholder.svg'}
