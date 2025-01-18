@@ -8,6 +8,7 @@ import TaxonomyList from '@/components/cards/taxonomy-list/TaxonomyList';
 import MapFrame from '@/components/cards/map/MapFrame';
 import TemperatureCard from '@/components/cards/temperature/TemperatureCard';
 import HumidCard from '@/components/cards/humid/HumidCard';
+import MonthChart from '@/components/cards/month-chart/MonthChart';
 
 const AntPageById = async ({ params, }: { params: Promise<{ id: string }> }) => {
 
@@ -21,7 +22,7 @@ const AntPageById = async ({ params, }: { params: Promise<{ id: string }> }) => 
     return (
         <section
             id={`${ant.genus}-${ant.species}`}
-            className='bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 h-full px-10 py-10'
+            className='bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 h-full px-2 lg:px-10 py-10'
         >
 
             <div className='bg-white shadow rounded-lg p-6 mb-8'>
@@ -59,40 +60,38 @@ const AntPageById = async ({ params, }: { params: Promise<{ id: string }> }) => 
                         <HumidCard title={'Humedad'} max={ant.nest_humidity_max} min={ant.nest_humidity_min} />
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <DataCard title="Queen Size" icon="👑" value={`${ant.queen_size_min} - ${ant.queen_size_max} mm`} />
-                        <DataCard title="Worker Size" icon="🐜" value={`${ant.worker_size_min} - ${ant.worker_size_max} mm`} />
-                        <DataCard title="Soldier Size" icon="💪" value={`${ant.soldier_size_min} - ${ant.soldier_size_max} mm`} />
-                        <DataCard title="Male Size" icon="♂️" value={`${ant.male_size_min} - ${ant.male_size_max} mm`} />
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                        <DataCard title="Queen Size" icon="👑" max={ant.queen_size_max} min={ant.queen_size_min} />
+                        <DataCard title="Worker Size" icon="🐜" max={ant.queen_size_max} min={ant.queen_size_min} />
+                        <DataCard title="Soldier Size" icon="💪" max={ant.queen_size_max} min={ant.queen_size_min} />
+                        <DataCard title="Male Size" icon="♂️" max={ant.queen_size_max} min={ant.queen_size_min} />
                     </div>
 
-                    {(ant.diapause || ant.nuptial_flight) && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            {ant.diapause && (
-                                <InfoCard title="Diapause" icon="❄️">
-                                    <dl className="grid grid-cols-2 gap-x-4 gap-y-2">
-                                        <dt className="font-medium text-gray-500">From</dt>
-                                        <dd className="text-gray-900">{ant.diapause_from}</dd>
-                                        <dt className="font-medium text-gray-500">To</dt>
-                                        <dd className="text-gray-900">{ant.diapause_to}</dd>
-                                        <dt className="font-medium text-gray-500">Threshold</dt>
-                                        <dd className="text-gray-900">{ant.diapause_threshold}°C</dd>
-                                    </dl>
-                                </InfoCard>
-                            )}
+                    <InfoCard title="Diapause" icon="❄️">
+                        {
+                            (ant.diapause && ant.diapause_from && ant.diapause_to && ant.diapause_threshold) ? (
 
-                            {ant.nuptial_flight && (
-                                <InfoCard title="Nuptial Flight" icon="🦋">
-                                    <dl className="grid grid-cols-2 gap-x-4 gap-y-2">
-                                        <dt className="font-medium text-gray-500">From</dt>
-                                        <dd className="text-gray-900">{ant.nuptial_flight_from}</dd>
-                                        <dt className="font-medium text-gray-500">To</dt>
-                                        <dd className="text-gray-900">{ant.nuptial_flight_to}</dd>
-                                    </dl>
-                                </InfoCard>
-                            )}
-                        </div>
-                    )}
+                                <MonthChart from={+ant.diapause_from} to={+ant.diapause_to} />
+                            ) : (
+                                <div className="flex justify-center items-center min-h-40">
+                                    <span className="text-gray-500">No hay datos</span>
+                                </div>
+                            )
+                        }
+                    </InfoCard>
+
+                    <InfoCard title="Nuptial Flight" icon="🦋">
+
+                        {
+                            (ant.nuptial_flight && ant.nuptial_flight_from && ant.nuptial_flight_to) ? (
+                                <MonthChart from={+ant.nuptial_flight_from} to={+ant.nuptial_flight_to} />
+                            ) : (
+                                <div className="flex justify-center items-center min-h-40">
+                                    <span className="text-gray-500">No hay datos</span>
+                                </div>
+                            )
+                        }
+                    </InfoCard>
                 </div>
 
                 <div className="lg:col-span-1 space-y-8">
@@ -119,7 +118,7 @@ const AntPageById = async ({ params, }: { params: Promise<{ id: string }> }) => 
                         </div>
                     </InfoCard>
                 </div>
-            </div>
+            </div >
 
         </section >
     )
