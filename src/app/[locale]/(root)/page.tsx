@@ -74,7 +74,7 @@ export default function AntsPage() {
                         type="text"
                         value={filter}
                         onChange={handleInputChange}
-                        className='rounded-md w-full h-10 text-neutral-900 px-2'
+                        className='rounded-md w-full h-10 bg-neutral-100 dark:bg-neutral-600 text-neutral-900 dark:text-neutral-50 px-2'
                         placeholder={t('search by genus and species')} />
 
                     <select
@@ -82,7 +82,7 @@ export default function AntsPage() {
                         id="registry"
                         defaultValue={12}
                         onChange={handleNumRegistryChange}
-                        className='text-neutral-900 px-2 rounded-lg'
+                        className='bg-neutral-100 dark:bg-neutral-600 text-neutral-900 dark:text-neutral-50 px-2 rounded-lg'
                     >
                         <option value="12">12</option>
                         <option value="24">24</option>
