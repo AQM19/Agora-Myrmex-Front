@@ -1,3 +1,4 @@
+import NoData from '@/components/ui/no-data/NoData';
 import { Bug } from 'lucide-react';
 import React from 'react'
 
@@ -32,7 +33,7 @@ const DataCard = ({ title, icon, max, min }: Props) => {
                             </div>
                         </div>
                     ) : (
-                        <p className="text-lg font-bold text-gray-700 mt-6">No hay datos</p>
+                        <NoData />
                     )
                 }
             </div>

@@ -1,3 +1,4 @@
+import NoData from '@/components/ui/no-data/NoData';
 import { ArrowDown, ArrowUp, Thermometer } from 'lucide-react';
 import React from 'react'
 
@@ -41,9 +42,7 @@ const TemperatureCard = ({ title, max, min }: Props) => {
                             </div>
                         </>
                     ) : (
-                        <div className="flex justify-center items-center mt-8">
-                            <span className="text-gray-500">No hay datos</span>
-                        </div>
+                        <NoData />
                     )
                 }
 
