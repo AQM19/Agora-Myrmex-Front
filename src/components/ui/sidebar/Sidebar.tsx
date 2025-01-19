@@ -6,7 +6,7 @@ import React from 'react'
 import { IoCloseOutline } from 'react-icons/io5'
 import LocalSwitch from '../local-switch/LocalSwitch';
 import ThemeSwitch from '../theme-switch/ThemeSwitch';
-import { BugPlay, House } from 'lucide-react';
+import { House } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 

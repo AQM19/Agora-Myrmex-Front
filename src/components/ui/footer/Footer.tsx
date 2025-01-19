@@ -61,7 +61,6 @@ const Footer = () => {
                             <Link
                                 href="https://www.buymeacoffee.com/aaronquintanal"
                                 target="_blank"
-                                className='mx-auto'
                             >
                                 <img
                                     src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
