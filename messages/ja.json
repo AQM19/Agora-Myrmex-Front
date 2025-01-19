@@ -1,0 +1,53 @@
+{
+    "Main": {
+        "species filter": "種フィルター",
+        "search by genus and species": "属と種で検索"
+    },
+    "No data": {
+        "title": "データなし"
+    },
+    "Menu": {
+        "home": "ホーム"
+    },
+    "Ant details": {
+        "Max": "最大",
+        "Min": "最小",
+        "Kingdom": "界",
+        "Phylum": "門",
+        "Class": "綱",
+        "Order": "目",
+        "Family": "科",
+        "Subfamily": "亜科",
+        "Tribe": "族",
+        "Genus and species": "属と種",
+        "Colony overview": "コロニー概要",
+        "Form": "コロニー形態",
+        "Founding": "創設タイプ",
+        "Size": "おおよそのサイズ",
+        "Egg Development": "卵の発育",
+        "Lifespan": "寿命",
+        "Days": "日",
+        "Years": "年",
+        "Synonyms": "同物異名",
+        "Temperature": "温度",
+        "Nest temperature": "巣の温度",
+        "Humid": "湿度",
+        "Nest humid": "巣の湿度",
+        "Queen size": "女王のサイズ",
+        "Worker size": "ワーカーのサイズ",
+        "Soldier size": "ソルジャーのサイズ",
+        "Male size": "オスのサイズ",
+        "Diapause": "休眠",
+        "Nuptial flight": "結婚飛行",
+        "Photo Gallery & Taxonomy & Distribution": "フォトギャラリー、分類学、分布",
+        "Taxonomy": "分類学",
+        "Distribution": "分布"
+    },
+    "Footer": {
+        "Discover": "既知のアリの種すべての飼育記録を発見する",
+        "Quick Links": "クイックリンク",
+        "Buy me a coffee": "コーヒーを奢る",
+        "Coffee description": "私の作品をサポートしていただきありがとうございます。お礼として、よろしければここでコーヒーを奢っていただけます。",
+        "All rights reserved": "全著作権所有"
+    }
+}

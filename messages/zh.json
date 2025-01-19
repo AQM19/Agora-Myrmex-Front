@@ -1,0 +1,53 @@
+{
+    "Main": {
+        "species filter": "物种筛选",
+        "search by genus and species": "按属和种搜索"
+    },
+    "No data": {
+        "title": "无数据"
+    },
+    "Menu": {
+        "home": "首页"
+    },
+    "Ant details": {
+        "Max": "最大值",
+        "Min": "最小值",
+        "Kingdom": "界",
+        "Phylum": "门",
+        "Class": "纲",
+        "Order": "目",
+        "Family": "科",
+        "Subfamily": "亚科",
+        "Tribe": "族",
+        "Genus and species": "属和种",
+        "Colony overview": "蚁群概览",
+        "Form": "蚁群形态",
+        "Founding": "建群类型",
+        "Size": "大致尺寸",
+        "Egg Development": "卵子发育",
+        "Lifespan": "寿命",
+        "Days": "天",
+        "Years": "年",
+        "Synonyms": "同物异名",
+        "Temperature": "温度",
+        "Nest temperature": "巢穴温度",
+        "Humid": "湿度",
+        "Nest humid": "巢穴湿度",
+        "Queen size": "蚁后尺寸",
+        "Worker size": "工蚁尺寸",
+        "Soldier size": "兵蚁尺寸",
+        "Male size": "雄蚁尺寸",
+        "Diapause": "滞育",
+        "Nuptial flight": "婚飞",
+        "Photo Gallery & Taxonomy & Distribution": "图片库、分类学和分布",
+        "Taxonomy": "分类学",
+        "Distribution": "分布"
+    },
+    "Footer": {
+        "Discover": "探索每个已知蚂蚁物种的饲养记录",
+        "Quick Links": "快速链接",
+        "Buy me a coffee": "请我喝咖啡",
+        "Coffee description": "感谢你支持我的工作。如果你愿意，可以在这里请我喝杯咖啡表示感谢。",
+        "All rights reserved": "版权所有"
+    }
+}

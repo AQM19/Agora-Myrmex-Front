@@ -1,0 +1,53 @@
+{
+    "Main": {
+        "species filter": "Filtro specie",
+        "search by genus and species": "Cerca per genere e specie"
+    },
+    "No data": {
+        "title": "Nessun dato"
+    },
+    "Menu": {
+        "home": "Home"
+    },
+    "Ant details": {
+        "Max": "Massimo",
+        "Min": "Minimo",
+        "Kingdom": "Regno",
+        "Phylum": "Phylum",
+        "Class": "Classe",
+        "Order": "Ordine",
+        "Family": "Famiglia",
+        "Subfamily": "Sottofamiglia",
+        "Tribe": "Tribù",
+        "Genus and species": "Genere e specie",
+        "Colony overview": "Panoramica della colonia",
+        "Form": "Forma della colonia",
+        "Founding": "Tipo di fondazione",
+        "Size": "Dimensione approssimativa",
+        "Egg Development": "Sviluppo delle uova",
+        "Lifespan": "Durata della vita",
+        "Days": "giorni",
+        "Years": "anni",
+        "Synonyms": "Sinonimi",
+        "Temperature": "Temperatura",
+        "Nest temperature": "Temperatura del nido",
+        "Humid": "Umidità",
+        "Nest humid": "Umidità del nido",
+        "Queen size": "Dimensione della regina",
+        "Worker size": "Dimensione delle operaie",
+        "Soldier size": "Dimensione dei soldati",
+        "Male size": "Dimensione dei maschi",
+        "Diapause": "Diapausa",
+        "Nuptial flight": "Volo nuziale",
+        "Photo Gallery & Taxonomy & Distribution": "Galleria fotografica, Tassonomia e Distribuzione",
+        "Taxonomy": "Tassonomia",
+        "Distribution": "Distribuzione"
+    },
+    "Footer": {
+        "Discover": "Scopri i registri di allevamento di ogni specie di formica conosciuta",
+        "Quick Links": "Collegamenti rapidi",
+        "Buy me a coffee": "Offrimi un caffè",
+        "Coffee description": "Grazie per il supporto al mio lavoro. Qui puoi offrirmi un caffè come ringraziamento se lo desideri.",
+        "All rights reserved": "Tutti i diritti riservati"
+    }
+}

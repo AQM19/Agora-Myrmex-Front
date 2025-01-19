@@ -1,0 +1,53 @@
+{
+    "Main": {
+        "species filter": "Artenfilter",
+        "search by genus and species": "Suche nach Gattung und Art"
+    },
+    "No data": {
+        "title": "Keine Daten"
+    },
+    "Menu": {
+        "home": "Startseite"
+    },
+    "Ant details": {
+        "Max": "Maximum",
+        "Min": "Minimum",
+        "Kingdom": "Reich",
+        "Phylum": "Stamm",
+        "Class": "Klasse",
+        "Order": "Ordnung",
+        "Family": "Familie",
+        "Subfamily": "Unterfamilie",
+        "Tribe": "Tribus",
+        "Genus and species": "Gattung und Art",
+        "Colony overview": "Kolonieübersicht",
+        "Form": "Kolonieform",
+        "Founding": "Gründungsart",
+        "Size": "Ungefähre Größe",
+        "Egg Development": "Eientwicklung",
+        "Lifespan": "Lebensdauer",
+        "Days": "Tage",
+        "Years": "Jahre",
+        "Synonyms": "Synonyme",
+        "Temperature": "Temperatur",
+        "Nest temperature": "Nesttemperatur",
+        "Humid": "Luftfeuchtigkeit",
+        "Nest humid": "Nestfeuchtigkeit",
+        "Queen size": "Königinnengröße",
+        "Worker size": "Arbeiterinnengröße",
+        "Soldier size": "Soldatengröße",
+        "Male size": "Männchengröße",
+        "Diapause": "Diapause",
+        "Nuptial flight": "Hochzeitsflug",
+        "Photo Gallery & Taxonomy & Distribution": "Fotogalerie, Taxonomie und Verbreitung",
+        "Taxonomy": "Taxonomie",
+        "Distribution": "Verbreitung"
+    },
+    "Footer": {
+        "Discover": "Entdecke die Zuchtaufzeichnungen aller bekannten Ameisenarten",
+        "Quick Links": "Schnellzugriff",
+        "Buy me a coffee": "Spendiere mir einen Kaffee",
+        "Coffee description": "Vielen Dank für die Unterstützung meiner Arbeit. Hier kannst du mir als Dankeschön einen Kaffee spendieren, wenn du möchtest.",
+        "All rights reserved": "Alle Rechte vorbehalten"
+    }
+}

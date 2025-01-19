@@ -42,5 +42,12 @@
         "Photo Gallery & Taxonomy & Distribution": "Photo Gallery, Taxonomy, and Distribution",
         "Taxonomy": "Taxonomy",
         "Distribution": "Distribution"
+    },
+    "Footer": {
+        "Discover": "Discover the breeding records of each known ant species",
+        "Quick Links": "Quick Links",
+        "Buy me a coffee": "Buy me a coffee",
+        "Coffee description": "Thank you for supporting my work. Here you can buy me a coffee as a thank you if you'd like.",
+        "All rights reserved": "All rights reserved"
     }
 }

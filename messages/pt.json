@@ -1,0 +1,53 @@
+{
+    "Main": {
+        "species filter": "Filtro de espécies",
+        "search by genus and species": "Pesquisar por gênero e espécie"
+    },
+    "No data": {
+        "title": "Sem dados"
+    },
+    "Menu": {
+        "home": "Início"
+    },
+    "Ant details": {
+        "Max": "Máximo",
+        "Min": "Mínimo",
+        "Kingdom": "Reino",
+        "Phylum": "Filo",
+        "Class": "Classe",
+        "Order": "Ordem",
+        "Family": "Família",
+        "Subfamily": "Subfamília",
+        "Tribe": "Tribo",
+        "Genus and species": "Gênero e espécie",
+        "Colony overview": "Visão geral da colônia",
+        "Form": "Forma da colônia",
+        "Founding": "Tipo de fundação",
+        "Size": "Tamanho aproximado",
+        "Egg Development": "Desenvolvimento dos ovos",
+        "Lifespan": "Tempo de vida",
+        "Days": "dias",
+        "Years": "anos",
+        "Synonyms": "Sinônimos",
+        "Temperature": "Temperatura",
+        "Nest temperature": "Temperatura do ninho",
+        "Humid": "Umidade",
+        "Nest humid": "Umidade do ninho",
+        "Queen size": "Tamanho da rainha",
+        "Worker size": "Tamanho das operárias",
+        "Soldier size": "Tamanho dos soldados",
+        "Male size": "Tamanho dos machos",
+        "Diapause": "Diapausa",
+        "Nuptial flight": "Voo nupcial",
+        "Photo Gallery & Taxonomy & Distribution": "Galeria de Fotos, Taxonomia e Distribuição",
+        "Taxonomy": "Taxonomia",
+        "Distribution": "Distribuição"
+    },
+    "Footer": {
+        "Discover": "Descubra os registros de criação de cada espécie de formiga conhecida",
+        "Quick Links": "Links rápidos",
+        "Buy me a coffee": "Me pague um café",
+        "Coffee description": "Obrigado por apoiar meu trabalho. Aqui você pode me pagar um café como agradecimento, se desejar.",
+        "All rights reserved": "Todos os direitos reservados"
+    }
+}

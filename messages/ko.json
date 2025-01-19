@@ -1,0 +1,53 @@
+{
+    "Main": {
+        "species filter": "종 필터",
+        "search by genus and species": "속과 종으로 검색"
+    },
+    "No data": {
+        "title": "데이터 없음"
+    },
+    "Menu": {
+        "home": "홈"
+    },
+    "Ant details": {
+        "Max": "최대",
+        "Min": "최소",
+        "Kingdom": "계",
+        "Phylum": "문",
+        "Class": "강",
+        "Order": "목",
+        "Family": "과",
+        "Subfamily": "아과",
+        "Tribe": "족",
+        "Genus and species": "속과 종",
+        "Colony overview": "군집 개요",
+        "Form": "군집 형태",
+        "Founding": "창설 유형",
+        "Size": "대략적 크기",
+        "Egg Development": "알 발육",
+        "Lifespan": "수명",
+        "Days": "일",
+        "Years": "년",
+        "Synonyms": "동물이명",
+        "Temperature": "온도",
+        "Nest temperature": "둥지 온도",
+        "Humid": "습도",
+        "Nest humid": "둥지 습도",
+        "Queen size": "여왕개미 크기",
+        "Worker size": "일개미 크기",
+        "Soldier size": "병정개미 크기",
+        "Male size": "수개미 크기",
+        "Diapause": "휴면",
+        "Nuptial flight": "결혼비행",
+        "Photo Gallery & Taxonomy & Distribution": "사진 갤러리, 분류학 및 분포",
+        "Taxonomy": "분류학",
+        "Distribution": "분포"
+    },
+    "Footer": {
+        "Discover": "알려진 모든 개미 종의 사육 기록을 발견하세요",
+        "Quick Links": "빠른 링크",
+        "Buy me a coffee": "커피 한잔 사주기",
+        "Coffee description": "제 작업을 지원해 주셔서 감사합니다. 원하신다면 여기서 감사의 표시로 커피 한잔을 사주실 수 있습니다.",
+        "All rights reserved": "모든 권리 보유"
+    }
+}
