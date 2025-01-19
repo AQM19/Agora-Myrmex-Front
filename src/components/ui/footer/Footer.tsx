@@ -20,7 +20,8 @@ const Footer = () => {
                     <div className="space-y-4">
 
                         <h3 className="text-xl font-bold flex items-center">
-                            <Bug className="mr-2" /> Agora Myrmex
+                            <Image src={'/imgs/svg/agora-myrmex-head-light-logo.png'} alt={''} width={140} height={140} className='block dark:hidden' />
+                            <Image src={'/imgs/svg/agora-myrmex-head-dark-logo.png'} alt={''} width={140} height={140} className='hidden dark:block' />
                         </h3>
 
                         <p className="text-sm">{t('Discover')}.</p>
