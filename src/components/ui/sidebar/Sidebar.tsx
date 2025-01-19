@@ -79,21 +79,6 @@ const Sidebar = () => {
 
                         </Link>
 
-                        <Link
-                            href={'/ants'}
-                            className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
-                            onClick={() => closeMenu()}
-                        >
-                            <BugPlay
-                                className='w-10'
-                            />
-
-                            <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
-                                Ants
-                            </span>
-
-                        </Link>
-
                     </li>
 
                 </ul>
