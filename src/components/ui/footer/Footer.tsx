@@ -52,9 +52,9 @@ const Footer = () => {
 
                     <div className="space-y-4">
 
-                        <h4 className="font-semibold">{t('Buy me a coffe')}</h4>
+                        <h4 className="font-semibold">{t('Buy me a coffee')}</h4>
 
-                        <p className="text-sm">{t('Coffee descripcion')}</p>
+                        <p className="text-sm">{t('Coffee description')}</p>
 
                         <div className="flex space-x-4">
 
