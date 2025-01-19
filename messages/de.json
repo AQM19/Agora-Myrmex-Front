@@ -12,7 +12,8 @@
         "back home": "Zurück zur Startseite"
     },
     "Menu": {
-        "home": "Startseite"
+        "home": "Startseite",
+        "about": "Uber"
     },
     "Ant details": {
         "Max": "Maximum",
@@ -54,5 +55,14 @@
         "Buy me a coffee": "Spendiere mir einen Kaffee",
         "Coffee description": "Vielen Dank für die Unterstützung meiner Arbeit. Hier kannst du mir als Dankeschön einen Kaffee spendieren, wenn du möchtest.",
         "All rights reserved": "Alle Rechte vorbehalten"
+    },
+    "About": {
+        "how it started": "Wie hat alles angefangen?",
+        "p-1": "Seit meiner Kindheit war ich schon immer von Ameisen fasziniert. Ich liebte es, ihnen bei der Arbeit zuzusehen, wie sie gemeinsam hin und her liefen, was für mich damals scheinbar ohne Sinn war. Jahre später erinnere ich mich, dass ich zu Weihnachten ein Chemie-Set bekam, das eine runde Mitte und eine vertikale Tafel hatte. Es zeigte, wie man Ameisen grundlegend züchten konnte, aber damals verstand ich die Anleitung entweder nicht richtig oder ich befolgte sie nicht. Trotzdem sammelte ich einzelne Arbeiterinnen von der Straße auf und setzte sie dort hinein. Offensichtlich war ich ein Kind und wusste nicht, was ich tat.",
+        "p-2": "Im Jahr 2018 tauchte ich in die Welt der Myrmekologie ein. Anfangs war ich sehr begeistert, da ich gerade begann, Programmierung zu studieren und endlich das hatte, wovon ich als Kind träumte - meine eigene Ameisenkolonie, diesmal auf die richtige Art. Ich begann nach und nach, die Ameisen, ihre Gewohnheiten und ihre Lebensräume zu studieren. Es war die Zeit, als ein bestimmter YouTuber virale Videos von Grillen gegen Ameisen machte. Damals gab es nicht so viele Informationen wie heute. Es gab nur einen Online-Ameisenshop in Spanien als Referenz und verschiedene Websites oder Foren, wo man über den Alltag der eigenen Kolonien sprechen konnte. Ich war da keine Ausnahme. Aber mir fehlten immer Informationen. Als Anfänger hatte ich das Bedürfnis, so schnell wie möglich zu lernen.",
+        "p-3": "Mit der Zeit entwickelte ich eine Idee. Ich sprach darüber als 'das werde ich irgendwann machen', 'in der Zukunft...', aber diese Idee wurde nie verwirklicht. Eine Website, die jedem Besucher ermöglicht, die notwendigen Parameter für die Zucht einer bestimmten Ameisenart zu kennen. Vielleicht klang es ehrgeizig oder vielleicht war es schon gemacht worden. Zu meinem Bedauern ließ ich diese Idee mit der Zeit beiseite, weil sie mir entweder zu kompliziert erschien oder ich dachte, dass niemand sie nutzen würde. Ich wünschte, sie würde wenigstens einer Person helfen.",
+        "p-4-1": "Nun, hier ist sie. Nach dem Sammeln von Informationen von verschiedenen Websites",
+        "p-4-2": "und anderen, mit den entsprechenden Referenzen zu jeder Zeit, ohne mehr Anerkennung zu beanspruchen als verdient (wenn etwas falsch ist, lass es mich bitte wissen), ein Ort, wo man Informationen über alle bekannten Ameisen finden kann. Zumindest die, die auf den bereits erwähnten Seiten aufgeführt sind.",
+        "p-5": "Ich hoffe, dass es den Menschen, die es nutzen, hilfreich ist. Es ist eine nicht-kommerzielle Anwendung, daher sind alle Informationen öffentlich zugänglich, da ich lediglich alles, was man auf anderen Websites suchen könnte, an einem Ort zusammengeführt habe. Ohne Zusammenarbeit mit diesen Websites, aber immer mit dem gebührenden Respekt durch Quellenangaben."
     }
 }

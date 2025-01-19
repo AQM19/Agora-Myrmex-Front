@@ -6,7 +6,7 @@ import React from 'react'
 import { IoCloseOutline } from 'react-icons/io5'
 import LocalSwitch from '../local-switch/LocalSwitch';
 import ThemeSwitch from '../theme-switch/ThemeSwitch';
-import { House } from 'lucide-react';
+import { House, UserRound } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 
@@ -41,12 +41,15 @@ const Sidebar = () => {
             <nav
                 className={
                     clsx(
-                        'fixed p-5 right-0 top-0 w-1/2 sm:w-1/4 h-screen flex flex-col bg-neutral-100 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50 z-20 shadow-2xl transform transition-all duration-300',
+                        'fixed p-5 right-0 top-0 w-3/4 sm:w-1/4 h-screen flex flex-col bg-neutral-100 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50 z-20 shadow-2xl transform transition-all duration-300',
                         {
                             'translate-x-full': !isSideMenuOpen
                         }
                     )
                 }>
+
+                <div className='block dark:hidden absolute top-1/2 left-1/2 w-64 h-64 bg-no-repeat bg-contain -translate-x-1/2 -translate-y-1/2' style={{ backgroundImage: 'url("/imgs/svg/agora-myrmex-head-light-logo.png")' }}></div>
+                <div className='hidden dark:block absolute top-1/2 left-1/2 w-64 h-64 bg-no-repeat bg-contain -translate-x-1/2 -translate-y-1/2' style={{ backgroundImage: 'url("/imgs/svg/agora-myrmex-head-dark-logo.png")' }}></div>
 
                 <div className='absolute top-5 left-0 flex flex-row items-center justify-between px-3 w-full'>
                     <LocalSwitch />
@@ -79,6 +82,18 @@ const Sidebar = () => {
                                 {t('home')}
                             </span>
 
+                        </Link>
+
+                        <Link
+                            href={'/about'}
+                            className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
+                            onClick={() => closeMenu()}
+                        >
+                            <UserRound className='w-10' />
+
+                            <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
+                                {t('about')}
+                            </span>
                         </Link>
 
                     </li>

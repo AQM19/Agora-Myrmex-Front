@@ -12,7 +12,8 @@
         "back home": "Wróć do strony głównej"
     },
     "Menu": {
-        "home": "Strona główna"
+        "home": "Strona główna",
+        "about": "O nas"
     },
     "Ant details": {
         "Max": "Maksimum",
@@ -54,5 +55,14 @@
         "Buy me a coffee": "Postaw mi kawę",
         "Coffee description": "Dziękuję za wsparcie mojej pracy. Tutaj możesz postawić mi kawę w podziękowaniu, jeśli chcesz.",
         "All rights reserved": "Wszelkie prawa zastrzeżone"
+    },
+    "About": {
+        "how it started": "Jak to się zaczęło?",
+        "p-1": "Od dziecka fascynowały mnie mrówki. Lubiłem patrzeć, jak pracują razem, wędrując tam i z powrotem w sposób, który wydawał mi się chaotyczny. Po latach pamiętam, że na Boże Narodzenie dostałem zestaw chemiczny z okrągłym centrum i pionowym panelem. Pokazywał, jak hodować mrówki w podstawowy sposób, ale w tamtym czasie albo nie było to dobrze wyjaśnione, albo nie zwracałem uwagi na instrukcje. Mimo to, zbierałem pojedyncze robotnice z ulicy i umieszczałem je tam. Oczywiście byłem dzieckiem i nie wiedziałem, co robię.",
+        "p-2": "Wkroczyłem w świat myrmekologii w 2018 roku. Na początku byłem bardzo podekscytowany, ponieważ zacząłem studiować programowanie i miałem to, o czym marzyłem od dziecka - własną kolonię mrówek, tym razem prowadzoną prawidłowo. Zacząłem powoli studiować mrówki, ich zwyczaje, ich siedliska. To był okres, kiedy pewien youtuber tworzył viralne filmy z walkami świerszczy przeciwko mrówkom. W tamtym czasie nie mogłem znaleźć tylu informacji, co dziś. Był tylko jeden sklep internetowy z mrówkami w Hiszpanii oraz kilka stron i forów, gdzie można było rozmawiać o codziennym życiu własnych kolonii. Ja nie byłem wyjątkiem, oczywiście. Chociaż zawsze brakowało mi informacji. Jako nowicjusz czułem potrzebę nauczenia się jak najwięcej, jak najszybciej.",
+        "p-3": "Z czasem rozwinąłem pewien pomysł. Mówiłem o nim 'zrobię to kiedyś', 'w przyszłości...', ale nigdy go nie zrealizowałem. Strona internetowa, która pozwoliłaby każdemu, kto na nią wejdzie, poznać parametry potrzebne do hodowli konkretnego gatunku mrówek. Może brzmiało to ambitnie lub może wydawało się, że już to zrobiono. Niestety, z czasem porzuciłem ten pomysł, ponieważ wydawał mi się albo zbyt skomplikowany, albo sądziłem, że nikt z niego nie skorzysta. Chciałbym, żeby pomógł chociaż jednej osobie.",
+        "p-4-1": "I oto jest. Po zebraniu informacji z różnych stron internetowych",
+        "p-4-2": "między innymi, zawsze z odpowiednimi odnośnikami, nie chcąc przypisywać sobie więcej zasług niż należne (jeśli coś jest niepoprawne, proszę daj mi znać) miejsce, gdzie można zobaczyć informacje o wszystkich znanych mrówkach. Przynajmniej tych, które znajdują się na wspomnianych stronach.",
+        "p-5": "Mam nadzieję, że będzie to przydatne dla osób, które z tego korzystają. Jest to aplikacja non-profit, więc wszystkie informacje są publiczne, ponieważ po prostu zebrałem w jednym miejscu wszystko, co można znaleźć na innych stronach. Bez współpracy z tymi stronami, ale zawsze z należytym szacunkiem, podając źródła."
     }
 }

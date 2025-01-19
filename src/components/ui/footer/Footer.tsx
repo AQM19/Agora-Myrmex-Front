@@ -48,6 +48,10 @@ const Footer = () => {
                             <li>
                                 <I18nLink href="/" className="hover:text-amber-600">{m('home')}</I18nLink>
                             </li>
+
+                            <li>
+                                <I18nLink href="/about" className="hover:text-amber-600">{m('about')}</I18nLink>
+                            </li>
                         </ul>
 
                     </div>

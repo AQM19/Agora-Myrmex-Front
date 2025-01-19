@@ -17,6 +17,17 @@ export const routing = defineRouting({
             'pl': '/mrowki/[slug]',
             'pt': '/formigas/[slug]',
             'zh': '/mayi/[slug]',
+        },
+        '/about': {
+            'en': '/about',
+            'es': '/acerca-de',
+            'de': '/uber',
+            'it': '/chi-siamo',
+            'ja': '/about',
+            'ko': '/about',
+            'pl': '/o-nas',
+            'pt': '/sobre',
+            'zh': '/about',
         }
     }
 });
