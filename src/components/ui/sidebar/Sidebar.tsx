@@ -8,11 +8,13 @@ import LocalSwitch from '../local-switch/LocalSwitch';
 import ThemeSwitch from '../theme-switch/ThemeSwitch';
 import { BugPlay, House } from 'lucide-react';
 import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 const Sidebar = () => {
 
     const isSideMenuOpen = useUISidebar(state => state.isSideMenuOpen);
     const closeMenu = useUISidebar(state => state.closeSideMenu);
+    const t = useTranslations('Menu');
 
     return (
         <aside className=''>
@@ -74,7 +76,7 @@ const Sidebar = () => {
                             />
 
                             <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
-                                Home
+                                {t('home')}
                             </span>
 
                         </Link>

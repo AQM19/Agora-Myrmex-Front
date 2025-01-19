@@ -3,6 +3,7 @@
 import { Pagination } from '@/components';
 import AntGridCard from '@/components/cards/ant_grid_card/AntGridCard';
 import { getPaginatedAnts, GridAnt } from '@/core';
+import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
@@ -18,6 +19,8 @@ export default function AntsPage() {
     const searchParams = useSearchParams();
     const pageString = searchParams.get('page') ?? '1';
     const page = isNaN(Number(pageString)) ? 1 : Number(pageString);
+
+    const t = useTranslations('Main');
 
     async function fetchAnts(filter?: string) {
         setIsLoading(true);
@@ -65,14 +68,14 @@ export default function AntsPage() {
         <section className='p-5 flex flex-col gap-4'>
 
             <div>
-                <span className='font-semibold text-lg text-neutral-900 dark:text-neutral-50'>Filtro de especies</span>
+                <span className='font-semibold text-lg text-neutral-900 dark:text-neutral-50'>{t('species filter')}</span>
                 <div className='grid grid-cols-[1fr_auto] gap-8'>
                     <input
                         type="text"
                         value={filter}
                         onChange={handleInputChange}
                         className='rounded-md w-full h-10 text-neutral-900 px-2'
-                        placeholder="Buscar por género o especie" />
+                        placeholder={t('search by genus and species')} />
 
                     <select
                         name="registy"

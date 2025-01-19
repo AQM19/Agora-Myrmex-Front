@@ -1,5 +1,6 @@
 import NoData from '@/components/ui/no-data/NoData';
 import { ArrowDown, ArrowUp, Thermometer } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import React from 'react'
 
 interface Props {
@@ -9,6 +10,10 @@ interface Props {
 }
 
 const TemperatureCard = ({ title, max, min }: Props) => {
+
+    const t = useTranslations('Ant details');
+    const d = useTranslations('No data');
+
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full min-h-44">
             <div className="bg-gray-800 px-3 py-2 flex items-center justify-between">
@@ -37,8 +42,8 @@ const TemperatureCard = ({ title, max, min }: Props) => {
                             </div>
 
                             <div className="flex justify-between w-full">
-                                <span className="text-sm text-gray-500">Max Temp</span>
-                                <span className="text-sm text-gray-500">Min Temp</span>
+                            <span className="text-sm text-gray-500">{t('Max')}</span>
+                            <span className="text-sm text-gray-500">{t('Min')}</span>
                             </div>
                         </>
                     ) : (

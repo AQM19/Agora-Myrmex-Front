@@ -1,1 +1,46 @@
-{}
+{
+    "Main": {
+        "species filter": "Filtro de especies",
+        "search by genus and species": "Buscar por género o especie"
+    },
+    "No data": {
+        "title": "No hay datos"
+    },
+    "Menu": {
+        "home": "Inicio"
+    },
+    "Ant details": {
+        "Max": "Máximo",
+        "Min": "Mínimo",
+        "Kingdom": "Reino",
+        "Phylum": "Filo",
+        "Class": "Clase",
+        "Order": "Orden",
+        "Family": "Familia",
+        "Subfamily": "Subfamilia",
+        "Tribe": "Tribu",
+        "Genus and species": "Género y especie",
+        "Colony overview": "Descripción general",
+        "Form": "Forma de la colonia",
+        "Founding": "Tipo de fundación",
+        "Size": "Tamaño aproximado",
+        "Egg Development": "Desarrollo de los huevos",
+        "Lifespan": "Esperanza de vida",
+        "Days": "días",
+        "Years": "años",
+        "Synonyms": "Sinónimos",
+        "Temperature": "Temperatura",
+        "Nest temperature": "Temperatura del nido",
+        "Humid": "Humedad",
+        "Nest humid": "Humedad del nido",
+        "Queen size": "Tamaño de la reina",
+        "Worker size": "Tamaño de la obrera",
+        "Soldier size": "Tamaño de la soldado",
+        "Male size": "Tamaño del macho",
+        "Diapause": "Diapausa",
+        "Nuptial flight": "Vuelo nupcial",
+        "Photo Gallery & Taxonomy & Distribution": "Galería de fotos, Taxonomía y Distribución",
+        "Taxonomy": "Taxonomía",
+        "Distribution": "Distribución"
+    }
+}

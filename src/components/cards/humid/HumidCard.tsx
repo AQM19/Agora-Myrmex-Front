@@ -1,5 +1,6 @@
 import NoData from '@/components/ui/no-data/NoData';
 import { ArrowDown, ArrowUp, Droplets } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import React from 'react'
 
 interface Props {
@@ -9,6 +10,10 @@ interface Props {
 }
 
 const HumidCard = ({ title, max, min }: Props) => {
+
+    const t = useTranslations('Ant details');
+    const d = useTranslations('No data');
+
     return (
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full min-h-44">
@@ -31,16 +36,16 @@ const HumidCard = ({ title, max, min }: Props) => {
                             <div className="flex justify-between w-full mb-2 -mt-8">
                                 <div className="flex items-center">
                                     <ArrowUp className="w-6 h-6 mr-2 text-red-500" />
-                                    <span className="text-3xl font-bold">{max ?? 'No hay datos'}°C</span>
+                                    <span className="text-3xl font-bold">{max ?? d('title')}%</span>
                                 </div>
                                 <div className="flex items-center">
                                     <ArrowDown className="w-6 h-6 mr-2 text-blue-500" />
-                                    <span className="text-3xl font-bold">{min ?? 'No hay datos'}°C</span>
+                                    <span className="text-3xl font-bold">{min ?? d('title')}%</span>
                                 </div>
                             </div>
                             <div className="flex justify-between w-full">
-                                <span className="text-sm text-gray-500">Max Humid</span>
-                                <span className="text-sm text-gray-500">Min Humid</span>
+                                <span className="text-sm text-gray-500">{t('Max')}</span>
+                                <span className="text-sm text-gray-500">{t('Min')}</span>
                             </div>
                         </>
                     ) : (

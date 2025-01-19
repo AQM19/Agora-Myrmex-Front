@@ -1,1 +1,46 @@
-{}
+{
+    "Main": {
+        "species filter": "Species filter",
+        "search by genus and species": "Search by genus and species"
+    },
+    "No data": {
+        "title": "No data"
+    },
+    "Menu": {
+        "home": "Home"
+    },
+    "Ant details": {
+        "Max": "Max",
+        "Min": "Min",
+        "Kingdom": "Kingdom",
+        "Phylum": "Phylum",
+        "Class": "Class",
+        "Order": "Order",
+        "Family": "Family",
+        "Subfamily": "Subfamily",
+        "Tribe": "Tribe",
+        "Genus and species": "Genus and species",
+        "Colony overview": "Colony overview",
+        "Form": "Colony form",
+        "Founding": "Founding type",
+        "Size": "Approximate size",
+        "Egg Development": "Egg development",
+        "Lifespan": "Lifespan",
+        "Days": "days",
+        "Years": "years",
+        "Synonyms": "Synonyms",
+        "Temperature": "Temperature",
+        "Nest temperature": "Nest temperature",
+        "Humid": "Humidity",
+        "Nest humid": "Nest humidity",
+        "Queen size": "Queen size",
+        "Worker size": "Worker size",
+        "Soldier size": "Soldier size",
+        "Male size": "Male size",
+        "Diapause": "Diapause",
+        "Nuptial flight": "Nuptial flight",
+        "Photo Gallery & Taxonomy & Distribution": "Photo Gallery, Taxonomy, and Distribution",
+        "Taxonomy": "Taxonomy",
+        "Distribution": "Distribution"
+    }
+}
