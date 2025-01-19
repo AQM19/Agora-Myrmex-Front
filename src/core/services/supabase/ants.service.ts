@@ -45,8 +45,8 @@ export const getPaginatedAnts = async ({ page = 1, take = 12, filter }: Paginati
             }
         }
 
-        const { data: ants, error } = await query;
-        const { data: dataCount, count } = await queryCount;
+        const { data: ants } = await query;
+        const { count } = await queryCount;
         const totalCount: number = count || 0;
         const totalPages = Math.ceil(totalCount / take);
 
@@ -55,25 +55,25 @@ export const getPaginatedAnts = async ({ page = 1, take = 12, filter }: Paginati
             totalPages: totalPages,
             ants: ants as GridAnt[] ?? []
         }
-    } catch (error) {
-        throw new Error('No se pudieron obtener los datos de las hormigas: ' + error);
+    } catch {
+        throw new Error('No se pudieron obtener los datos de las hormigas');
     }
 }
 
 export const getAntByGenusAndSpecies = async (genus: string, species: string) => {
     try {
-        const { data: ant, error: antError } = await supabase
+        const { data: ant } = await supabase
             .from('ant_summary_table')
             .select('*')
             .eq('genus', genus)
             .eq('species', species);
 
-        const { data: images, error: imagesError } = await supabase
+        const { data: images } = await supabase
             .from('ant_images')
             .select('image, appointment')
             .eq('id_ant', ant![0].id);
 
-        const { data: synonyms, error: synonymsError } = await supabase
+        const { data: synonyms } = await supabase
             .from('synonyms')
             .select('synonym')
             .eq('id_ant', ant![0].id)
@@ -83,7 +83,7 @@ export const getAntByGenusAndSpecies = async (genus: string, species: string) =>
             images: images as ImageAnt[] ?? [],
             synonyms: synonyms ?? []
         }
-    } catch (error) {
+    } catch {
         throw new Error('No se pudo obtener los datos de la especie ' + genus + '' + species);
     }
 }

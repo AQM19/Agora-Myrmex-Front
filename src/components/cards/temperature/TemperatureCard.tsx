@@ -12,7 +12,6 @@ interface Props {
 const TemperatureCard = ({ title, max, min }: Props) => {
 
     const t = useTranslations('Ant details');
-    const d = useTranslations('No data');
 
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full min-h-44">
@@ -30,7 +29,7 @@ const TemperatureCard = ({ title, max, min }: Props) => {
                 {
                     (max !== null && min !== null) ? (
                         <>
-                            <div className="flex justify-between items-center w-full mb-2 -mt-8">
+                            <div className="flex justify-between items-center w-full mb-2 -mt-8 text-neutral-900">
                                 <div className="flex items-center">
                                     <ArrowUp className="w-6 h-6 mr-2 text-red-500" />
                                     <span className="text-3xl font-bold">{max}°C</span>

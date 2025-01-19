@@ -33,7 +33,7 @@ const HumidCard = ({ title, max, min }: Props) => {
                 {
                     (max !== null && min !== null) ? (
                         <>
-                            <div className="flex justify-between w-full mb-2 -mt-8">
+                            <div className="flex justify-between w-full mb-2 -mt-8 text-neutral-900">
                                 <div className="flex items-center">
                                     <ArrowUp className="w-6 h-6 mr-2 text-red-500" />
                                     <span className="text-3xl font-bold">{max ?? d('title')}%</span>

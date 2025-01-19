@@ -5,13 +5,13 @@ import AntGridCard from '@/components/cards/ant_grid_card/AntGridCard';
 import { getPaginatedAnts, GridAnt } from '@/core';
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 export default function AntsPage() {
     const [ants, setAnts] = useState<GridAnt[]>([]);
-    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [, setCurrentPage] = useState<number>(1);
     const [totalPages, setTotalPages] = useState<number>(0);
-    const [isLoading, setIsLoading] = useState(true);
+    const [, setIsLoading] = useState(true);
     const [filter, setFilter] = useState<string>('');
     const [debouncedFilter, setDebouncedFilter] = useState('');
     const [numRegistry, setNumRegistry] = useState(12);
@@ -22,7 +22,7 @@ export default function AntsPage() {
 
     const t = useTranslations('Main');
 
-    async function fetchAnts(filter?: string) {
+    const fetchAnts = useCallback(async (filter?: string) => {
         setIsLoading(true);
         try {
             const { ants, totalPages, currentPage } = await getPaginatedAnts({ page, take: numRegistry, filter });
@@ -34,11 +34,11 @@ export default function AntsPage() {
         } finally {
             setIsLoading(false);
         }
-    }
+    }, [page, numRegistry]);
 
     useEffect(() => {
         fetchAnts();
-    }, [page]);
+    }, [fetchAnts, page]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -54,7 +54,7 @@ export default function AntsPage() {
         } else {
             fetchAnts();
         }
-    }, [debouncedFilter, searchParams, numRegistry]);
+    }, [fetchAnts, debouncedFilter, searchParams, numRegistry]);
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setFilter(event.target.value);

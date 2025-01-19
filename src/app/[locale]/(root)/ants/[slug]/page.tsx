@@ -65,7 +65,7 @@ const AntPageById = async ({ params, }: { params: Promise<{ slug: string }> }) =
                             synonyms && synonyms.length > 0 ? (
 
                                 synonyms.map((synonym, index) => (
-                                    <p>
+                                    <p key={`${synonym}-${index}`}>
                                         {synonym.synonym}
                                     </p>
                                 ))

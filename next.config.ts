@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
             {
                 protocol: 'https',
                 hostname: 'www.antwiki.org',
+            },
+            {
+                protocol: 'https',
+                hostname: 'cdn.buymeacoffee.com'
             }
         ]
     }

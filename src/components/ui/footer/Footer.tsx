@@ -1,6 +1,7 @@
 import { Link as I18nLink } from '@/i18n/routing'
-import { Bug, Mail, MapPin } from 'lucide-react'
+import { Bug, Mail } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -62,9 +63,11 @@ const Footer = () => {
                                 href="https://www.buymeacoffee.com/aaronquintanal"
                                 target="_blank"
                             >
-                                <img
+                                <Image
                                     src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
                                     alt="Buy Me a Coffee"
+                                    width={208}
+                                    height={56}
                                     className='h-14 w-52'
                                 />
                             </Link>

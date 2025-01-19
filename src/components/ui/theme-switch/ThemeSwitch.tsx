@@ -11,7 +11,11 @@ const ThemeSwitch = () => {
     const disableDarkMode = useDarkModeStatus(state => state.disableDarkMode);
 
     const toggleDarkMode = () => {
-        isDarkModeEnabled ? disableDarkMode() : enableDarkMode();
+        if (isDarkModeEnabled) {
+            disableDarkMode();
+            return;
+        }
+        enableDarkMode();
     }
 
     return (
