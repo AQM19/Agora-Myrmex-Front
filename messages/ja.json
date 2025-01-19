@@ -4,7 +4,12 @@
         "search by genus and species": "属と種で検索"
     },
     "No data": {
-        "title": "データなし"
+        "title": "データなし",
+        "page error": "このページは存在しません",
+        "error punish": "おっと、このページは存在しないようです。誰かが試してはいけないことを試しているようです。",
+        "page not found": "404 - ページが見つかりません",
+        "not found description": "おっと、お探しのページは存在しません。",
+        "back home": "ホームに戻る"
     },
     "Menu": {
         "home": "ホーム"

@@ -4,7 +4,12 @@
         "search by genus and species": "속과 종으로 검색"
     },
     "No data": {
-        "title": "데이터 없음"
+        "title": "데이터 없음",
+        "page error": "이 페이지는 존재하지 않습니다",
+        "error punish": "이 페이지를 찾을 수 없는 것 같습니다. 누군가가 하지 말아야 할 일을 시도하고 있습니다.",
+        "page not found": "404 - 페이지를 찾을 수 없음",
+        "not found description": "이 페이지는 존재하지 않습니다.",
+        "back home": "홈으로 돌아가기"
     },
     "Menu": {
         "home": "홈"

@@ -4,7 +4,12 @@
         "search by genus and species": "Buscar por género o especie"
     },
     "No data": {
-        "title": "No hay datos"
+        "title": "No hay datos",
+        "page error": "Esta página no existe",
+        "error punish": "¡Ups!, Esta página que estás tratando de buscar parece ser que no existe. Alguien está probando cosas que no debería.",
+        "page not found": "404 - Página no encontrada",
+        "not found description": "¡Ups!, esta página que buscas no existe.",
+        "back home": "Volver al inicio"
     },
     "Menu": {
         "home": "Inicio"
