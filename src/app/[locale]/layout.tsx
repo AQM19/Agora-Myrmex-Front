@@ -10,44 +10,51 @@ import { Suspense } from "react";
 import Loading from "./loading";
 
 export const metadata: Metadata = {
-  title: "Aarón Quintanal Martín - Desarrollador Full Stack",
-  description: "Aarón Quintanal Martín es un desarrollador full stack especializado en Angular, Next.js y .NET, ubicado en Cantabria.",
+  title: "Agora Myrmex - Fichas de cría de hormigas",
+  description: "Agora Myrmex es la aplicación para el correcto cuidado de las diferentes especies de hormigas. Recopilación de todas las especies del mundo.",
   authors: [
     {
       name: 'Aarón',
       url: host
     }
   ],
-  keywords: ["Aarón Quintanal Martín", "Cantabria", "programador", "desarrollador", "full stack", "Angular", "Next.js", ".NET"],
+  keywords: ["Aarón Quintanal Martín", "Hormigas", "Hormigueros", "Fichas de cría", "Ficha de cría", "Especies"],
   openGraph: {
-    title: "Aarón Quintanal Martín - Desarrollador Full Stack",
-    description: "Conoce a Aarón Quintanal Martín, un experto desarrollador full stack en tecnologías modernas.",
+    title: "Agora Myrmex - Fichas de cría de hormigas",
+    description: "Conoce Agora Myrmex y descubre todas las fichas de cría de tus especies de hormiga favoritas.",
     url: host,
     type: "website",
     images: [
       {
-        url: `${host}/imgs/aaron-quintanal-martin.png`,
+        url: `/imgs/svg/agora-myrmex-head-light-logo.png`,
         width: 800,
         height: 600,
-        alt: "Aarón Quintanal Martín",
+        alt: "Agora Myrmex",
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aarón Quintanal Martín - Desarrollador Full Stack",
-    description: "Aarón Quintanal Martín es un desarrollador full stack con experiencia en Angular, Next.js y .NET.",
+    title: "Agora Myrmex - Fichas de cría de hormigas",
+    description: "Conoce Agora Myrmex y descubre todas las fichas de cría de tus especies de hormiga favoritas",
     site: '@AQuintanalMDev',
     creator: '@AQuintanalMDev',
     images: [
-      `${host}/imgs/aaron-quintanal-martin.png`
+      `/imgs/svg/agora-myrmex-head-light-logo.png`
     ]
   },
   alternates: {
     canonical: host,
     languages: {
       'en': `${host}/en`,
-      'es': `${host}/es`
+      'es': `${host}/es`,
+      'de': `${host}/de`,
+      'it': `${host}/it`,
+      'ja': `${host}/ja`,
+      'ko': `${host}/ko`,
+      'pl': `${host}/pl`,
+      'pt': `${host}/pt`,
+      'zh': `${host}/zh`,
     }
   },
   robots: {
@@ -64,12 +71,12 @@ export const metadata: Metadata = {
     },
   },
   appleWebApp: {
-    title: 'Aarón Quintanal Martín - Desarrollador Full Stack',
+    title: 'Agora Myrmex - Fichas de cría de hormigas',
     statusBarStyle: 'black-translucent',
     startupImage: [
-      '/imgs/aaron-quintanal-martin.png',
+      '/imgs/svg/agora-myrmex-head-light-logo.png',
       {
-        url: '/assets/imgs/aaron-quintanal-martin.png',
+        url: '/assets/imgs/svg/agora-myrmex-head-light-logo.png',
         media: '(device-width: 768px) and (device-height: 1024px)',
       },
     ],
