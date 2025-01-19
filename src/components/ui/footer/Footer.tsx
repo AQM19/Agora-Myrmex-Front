@@ -1,5 +1,5 @@
 import { Link as I18nLink } from '@/i18n/routing'
-import { Bug, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
