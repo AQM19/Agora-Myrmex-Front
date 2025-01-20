@@ -1,17 +1,18 @@
 'use client'
 
+import { IoCloseOutline } from 'react-icons/io5'
+import { Link } from '@/i18n/routing';
+import { MenuItemsConfig } from '@/core/config/menu/menu.config';
+import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { useUISidebar } from '@/core/services/ui/sidebar-status.service'
 import clsx from 'clsx';
-import React from 'react'
-import { IoCloseOutline } from 'react-icons/io5'
 import LocalSwitch from '../local-switch/LocalSwitch';
+import React from 'react'
 import ThemeSwitch from '../theme-switch/ThemeSwitch';
-import { House, UserRound } from 'lucide-react';
-import { Link } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
 
 const Sidebar = () => {
-
+    const [openMenus, setOpenMenus] = React.useState<{ [key: string]: boolean }>({});
     const isSideMenuOpen = useUISidebar(state => state.isSideMenuOpen);
     const closeMenu = useUISidebar(state => state.closeSideMenu);
     const t = useTranslations('Menu');
@@ -48,8 +49,8 @@ const Sidebar = () => {
                     )
                 }>
 
-                <div className='block dark:hidden absolute top-1/2 left-1/2 w-64 h-64 bg-no-repeat bg-contain -translate-x-1/2 -translate-y-1/2' style={{ backgroundImage: 'url("/imgs/svg/agora-myrmex-head-light-logo.png")' }}></div>
-                <div className='hidden dark:block absolute top-1/2 left-1/2 w-64 h-64 bg-no-repeat bg-contain -translate-x-1/2 -translate-y-1/2' style={{ backgroundImage: 'url("/imgs/svg/agora-myrmex-head-dark-logo.png")' }}></div>
+                <div className='block dark:hidden absolute top-1/2 left-1/2 w-64 h-64 bg-no-repeat bg-contain -translate-x-1/2 -translate-y-1/2 opacity-10 -z-10' style={{ backgroundImage: 'url("/imgs/svg/agora-myrmex-head-light-logo.png")' }}></div>
+                <div className='hidden dark:block absolute top-1/2 left-1/2 w-64 h-64 bg-no-repeat bg-contain -translate-x-1/2 -translate-y-1/2 opacity-10 -z-10' style={{ backgroundImage: 'url("/imgs/svg/agora-myrmex-head-dark-logo.png")' }}></div>
 
                 <div className='absolute top-5 left-0 flex flex-row items-center justify-between px-3 w-full'>
                     <LocalSwitch />
@@ -67,36 +68,79 @@ const Sidebar = () => {
 
                 <ul className="flex flex-col gap-2 h-full mt-10 text-aero dark:text-emerald">
 
-                    <li>
+                    {
+                        MenuItemsConfig.map((item, index) => (
 
-                        <Link
-                            href={'/'}
-                            className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
-                            onClick={() => closeMenu()}
-                        >
-                            <House
-                                className='w-10'
-                            />
+                            !item.children ? (
+                                <li key={`${item.label}-${index}`}>
+                                    <Link href={item.href ?? '/'}
+                                        className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-neutral-200 dark:hover:bg-neutral-600 duration-300"
+                                        onClick={() => closeMenu()}
+                                    >
+                                        <item.icon
+                                            size={25}
+                                        />
 
-                            <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
-                                {t('home')}
-                            </span>
+                                        <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
+                                            {t(`${item.label}`)}
+                                        </span>
+                                    </Link>
+                                </li>
 
-                        </Link>
+                            ) : (
+                                <li key={`${item.label}-${index}`}>
+                                    <div className="flex flex-col gap-2">
+                                        <button
+                                            onClick={() => setOpenMenus(prev => ({
+                                                ...prev,
+                                                [item.label]: !prev[item.label]
+                                            }))}
+                                            className="flex items-center justify-between w-full rounded-md p-2 hover:bg-neutral-200 dark:hover:bg-neutral-600 duration-300"
+                                        >
+                                            <div className="flex items-center gap-4">
+                                                <item.icon size={25} />
+                                                <span>{t(`${item.label}`)}</span>
+                                            </div>
+                                            <svg
+                                                className={`w-4 h-4 transition-transform ${openMenus[item.label] ? 'rotate-180' : ''}`}
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                            >
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </button>
 
-                        <Link
-                            href={'/about'}
-                            className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-night-600"
-                            onClick={() => closeMenu()}
-                        >
-                            <UserRound className='w-10' />
+                                        {
+                                            openMenus[item.label] && (
+                                                <motion.ul
+                                                    initial={{ opacity: 0, height: 0, y: -20 }}
+                                                    animate={{ opacity: 1, height: 'auto', y: 0 }}
+                                                    exit={{ opacity: 0, height: 0, y: -20 }}
+                                                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                                                    className="ml-4 flex flex-col gap-2 overflow-hidden"
+                                                >
+                                                    {item.children.map((child, childIndex) => (
+                                                        <li key={`${child.label}-${childIndex}`}>
+                                                            <Link
+                                                                href={child.href ?? '/'}
+                                                                className="flex items-center gap-4 rounded-md p-2 transition-colors hover:bg-neutral-200 dark:hover:bg-neutral-600 duration-300"
+                                                                onClick={() => closeMenu()}
+                                                            >
+                                                                <child.icon size={20} />
+                                                                <span>{t(`${child.label}`)}</span>
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </motion.ul>
+                                            )
+                                        }
+                                    </div>
+                                </li>
+                            )
 
-                            <span className={`transition-opacity duration-300 ${isSideMenuOpen ? 'opacity-100' : 'opacity-100'}`} >
-                                {t('about')}
-                            </span>
-                        </Link>
-
-                    </li>
+                        ))
+                    }
 
                 </ul>
 
