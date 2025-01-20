@@ -13,7 +13,16 @@
     },
     "Menu": {
         "home": "Home",
-        "about": "About"
+        "about": "About",
+        "contact": "Contact",
+        "basic guides": "Basic guides",
+        "how to start": "How to start",
+        "basic equipment": "Basic equipment",
+        "identification": "Identification",
+        "good practices": "Good practices",
+        "resources": "Resources",
+        "publications": "Publications",
+        "forums": "Forums"
     },
     "Ant details": {
         "Max": "Max",

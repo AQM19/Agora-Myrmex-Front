@@ -13,7 +13,16 @@
     },
     "Menu": {
         "home": "Inicio",
-        "about": "Acerca de"
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "basic guides": "Guías básicas",
+        "how to start": "Cómo empezar",
+        "basic equipment": "Equipamiento básico",
+        "identification": "Identificación",
+        "good practices": "Buenas prácticas",
+        "resources": "Recursos",
+        "publications": "Publicaciones",
+        "forums": "Foros"
     },
     "Ant details": {
         "Max": "Máximo",
