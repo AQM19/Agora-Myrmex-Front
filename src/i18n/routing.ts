@@ -2,7 +2,7 @@ import { defineRouting } from 'next-intl/routing';
 import { createNavigation } from 'next-intl/navigation';
 
 export const routing = defineRouting({
-    locales: ['es', 'en', 'de', 'it', 'ja', 'ko', 'pl', 'pt', 'zh'],
+    locales: ['es', 'en'],
     defaultLocale: 'es',
     localePrefix: 'always',
     pathnames: {
@@ -10,24 +10,38 @@ export const routing = defineRouting({
         "/ants/[slug]": {
             'en': '/ants/[slug]',
             'es': '/hormigas/[slug]',
-            'de': '/ameisen/[slug]',
-            'it': '/formiche/[slug]',
-            'ja': '/ari/[slug]',
-            'ko': '/gae-mi/[slug]',
-            'pl': '/mrowki/[slug]',
-            'pt': '/formigas/[slug]',
-            'zh': '/mayi/[slug]',
         },
         '/about': {
             'en': '/about',
             'es': '/acerca-de',
-            'de': '/uber',
-            'it': '/chi-siamo',
-            'ja': '/about',
-            'ko': '/about',
-            'pl': '/o-nas',
-            'pt': '/sobre',
-            'zh': '/about',
+        },
+        '/contact': {
+            'en': '/contact',
+            'es': '/contacto',
+        },
+        '/guides/how-to-start': {
+            'en': '/guides/how-to-start',
+            'es': '/guías/cómo-empezar',
+        },
+        '/guides/basic-equipment': {
+            'en': '/guides/basic-equipment',
+            'es': '/guías/equipo-básico',
+        },
+        '/guides/identification': {
+            'en': '/guides/identification',
+            'es': '/guías/identificación',
+        },
+        '/guides/good-practices': {
+            'en': '/guides/good-practices',
+            'es': '/guías/buenas-prácticas',
+        },
+        '/resources/publications': {
+            'en': '/resources/publications',
+            'es': '/recursos/publicaciones',
+        },
+        '/resources/forums': {
+            'en': '/resources/forums',
+            'es': '/recursos/foros',
         }
     }
 });
