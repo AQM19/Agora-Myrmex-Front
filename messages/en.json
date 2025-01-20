@@ -66,12 +66,24 @@
         "All rights reserved": "All rights reserved"
     },
     "About": {
-        "how it started": "How did the idea start?",
-        "p-1": "Since I was a child, I have always been passionate about ants. I loved watching them work together, walking back and forth in what seemed to me to be a directionless path. Over the years, I remember getting a chemistry set for Christmas that had a circular center and a vertical panel. It showed you how to raise ants in a basic way, but back then, either it wasn't well explained or I didn't pay much attention to the instructions. Nevertheless, I would catch loose worker ants from the street and put them there. Obviously, I was a child and didn't know what I was doing.",
-        "p-2": "I entered the world of myrmecology back in 2018. At first, I was very excited as I was starting to study programming and had what I dreamed of since childhood, my own ant colony, this time properly. I began to gradually study ants, their habits, their habitats. It was the time when a certain YouTuber made viral videos of crickets fighting against ants. Back then, I couldn't find as much information as today. There was only one online ant store in Spain to reference and several pages or forums where you could talk about the daily life of each person's colonies. I was no different, of course. Although I always lacked information. Being a novice, I had the need to learn as quickly as possible.",
-        "p-3": "Over time, I developed an idea. I would talk about it as 'I'll do it someday,' 'in the future...,' but that idea never materialized. A website that would allow anyone who entered to know the necessary parameters for raising a specific ant species. Maybe it sounded ambitious, or maybe it was something that was already done. Much to my regret, I put that idea aside over time because either it seemed too complicated or I thought no one would use it. I hoped it would help at least one person.",
-        "p-4-1": "Well, here it is. After gathering information from various websites",
-        "p-4-2": "among others, with their respective references at all times, not wanting to take more credit than deserved (if there's anything wrong, please let me know) a place where you can see information about all known ants. At least those that appear on pages like the ones mentioned.",
-        "p-5": "I hope it's useful to those who use it. It's a non-profit application, therefore all information is public since I only unified everything that could be searched on other websites in one place. Without collaboration with said websites, but always with the respect they deserve by giving credit."
+        "title": "About Agora Myrmex Project",
+        "p-1": "Agora Myrmex is an open source project that aims to collect information about known ant species. The collected information is presented in breeding records containing data about the biology, ecology, and taxonomy of each species.",
+        "p-2": "It was born from the idea of having a place where information about known ant species could be easily accessed and consulted. The collected information is in the public domain and is available to anyone who wants to consult it.",
+        "p-3": "Different reference websites and public domain databases were used as sources. The collected information is presented in a structured and referenced way so that anyone can consult and verify it.",
+        "highlights": "Highlights",
+        "h-1": "Educational resources about different species",
+        "h-2": "Basic guides for beginners",
+        "h-3": "Information about ant biology and ecology",
+        "h-4": "Focuses on community inclusion",
+        "h-5": "Updated and accurate information",
+        "mission": "My Mission",
+        "m-1": "My mission is to provide accurate and up-to-date information about known ant species to promote education and conservation of these insects, as well as their care for myrmecology enthusiasts.",
+        "future features": "Future Features",
+        "f-1": "Add more information about species biology and ecology",
+        "f-2": "Include information about ant breeding and care",
+        "f-3": "Add more educational resources and basic guides",
+        "get involved": "Get Involved",
+        "i-1": "Whether you're an experienced myrmecologist or just discovering the ant world, there's a place for you in our community. Join our quest to uncover the secrets of the ant world!",
+        "contact me": "Contact Me"
     }
 }

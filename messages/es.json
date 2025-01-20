@@ -66,12 +66,24 @@
         "All rights reserved": "Todos los derechos reservados"
     },
     "About": {
-        "how it started": "¿Cómo empezó la idea?",
-        "p-1": "Desde pequeño siempre me han apasionado las hormigas. Me gustaba verlas trabajar todas juntas, caminando de allá para acá en lo que para mi parecía un rumbo sin sentido. Con el paso de los años recuerdo que por navidad me trajeron un juego de quimicefa que tenía un centro circular y un panel vertical. Te indicaba cómo criar de manera básica las hormigas, pero en aquél entonces, o no estaba bien explicado o bien no hice mucho caso de las instrucciones. Igualmente, cogía obreras sueltas de la calle que iban a parar allí. Obviamente era un niño y no sabía lo que hacía.",
-        "p-2": "Entré en el mundo de la mirmecología allá en el 2018. Al principio estaba muy ilusionado ya que empezaba a estudiar programación y tenía lo que soñaba desde pequeño, mi propia colonia de hormigas, esta vez de manera correcta. Comencé a estudiar poco a poco las hormigas, sus costumbres, sus hábitats. Era la época en la que cierto youtuber hacía peleas de grillos contra hormigas muy virales. Por aquél entonces no conseguía encontrar tanta información como hoy en día. Solo había una tienda en españa de hormigas por internet a la que referenciarse y varias páginas o foros donde poder hablar sobre el día a día de las colonias propias de cada uno. Yo no fui menos, claro. Aunque siempre me faltó información. Al ser novato tenía la necesidad de aprender lo más rápido posible.",
-        "p-3": "Con el tiempo desarrollé una idea. La iba comentando como 'ya lo haré', 'en el futuro...', pero esa idea nunca la materializaba. Una página web que permitiera a todo aquél que entrase conocer los parámetros necesarios para la crianza de una especie de hormiga en concreto. Quizá sonase algo ambicioso, o quizá algo que ya estaba hecho. Muy a mi pesar, dejé esa idea de lado con el paso del tiempo porque o bien me parecía muy complicada o bien me parecía que nadie la iba a usar. Ojalá le sirviera tan solo a una persona.",
-        "p-4-1": "Pues aquí está. Tras recabar información de varias páginas web",
-        "p-4-2": "entre otras, con sus respectivas referencias en todo momento, no queriendo llevarme más acreditación de la merecida (si hay algo erróneo hazmelo saber, por favor) un lugar donde poder ver la información de todas las hormigas conocidas. Al menos las que figuran en páginas como las ya mencionadas.",
-        "p-5": "Espero que a aquellas personas que lo usen les sea útil. Es una aplicación sin ánimo de lucro, por tanto toda la información está a nivel público ya que solamente unifiqué todo que se podría buscar en otras webs en un mismo punto. Sin colaboración con dichas webs, pero siempre desde el respeto que merecen dando acreditación."
+        "title": "Sobre el proyecto Agora Myrmex",
+        "p-1": "Agora Myrmex es un proyecto de código abierto que tiene como objetivo recopilar información sobre las especies de hormigas conocidas. La información recopilada se presenta en fichas de cría que contienen datos sobre la biología, la ecología y la taxonomía de cada especie.",
+        "p-2": "Nació de la idea de poder tener un lugar donde poder consultar información sobre las especies de hormigas conocidas, de forma sencilla y accesible. La información recopilada es de dominio público y está disponible para cualquier persona que quiera consultarla.",
+        "p-3": "Como fuente se utilizaron diferentes páginas web de referencia así como bases de datos de dominio público. La información recopilada se presenta de forma estructurada y referenciada para que cualquier persona pueda consultarla y verificarla.",
+        "highlights": "Aspectos destacados",
+        "h-1": "Recursos educativos sobre diferentes especies",
+        "h-2": "Guías básicas para principiantes",
+        "h-3": "Información sobre la biología y ecología de las hormigas",
+        "h-4": "Trata de la inclusión de toda la comunidad",
+        "h-5": "Información actualizada y precisa",
+        "mission": "Mi misión",
+        "m-1": "Mi misión es proporcionar información precisa y actualizada sobre las especies de hormigas conocidas para poder fomentar la educación y la conservación de estos insectos, así como su cuidado para los aficionados a la mirmecología.",
+        "future features": "Características futuras",
+        "f-1": "Añadir más información sobre la biología y ecología de las especies",
+        "f-2": "Incluir información sobre la cría y cuidado de las hormigas",
+        "f-3": "Añadir más recursos educativos y guías básicas",
+        "get involved": "Participa",
+        "i-1": "Ya seas un mirmecólogo experimentado o estés descubriendo el mundo de las hormigas, hay un lugar para ti en nuestra comunidad. ¡Únete a nuestra búsqueda para descubrir los secretos del mundo de las hormigas!",
+        "contact me": "Contáctame"
     }
 }
