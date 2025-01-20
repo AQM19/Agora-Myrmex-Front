@@ -15,34 +15,6 @@ const LocaleConfig: Locale[] = [
     {
         lang: 'en',
         alt: 'Bandera de reino unido'
-    },
-    {
-        lang: 'de',
-        alt: 'Bandera de alemania'
-    },
-    {
-        lang: 'it',
-        alt: 'Bandera de italia'
-    },
-    {
-        lang: 'ja',
-        alt: 'Bandera de japón'
-    },
-    {
-        lang: 'ko',
-        alt: 'Bandera de korea del sur'
-    },
-    {
-        lang: 'pl',
-        alt: 'Bandera de polonia'
-    },
-    {
-        lang: 'pt',
-        alt: 'Bandera de portugal'
-    },
-    {
-        lang: 'zh',
-        alt: 'Bandera de china'
     }
 ]
 
