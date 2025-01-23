@@ -85,5 +85,33 @@
         "get involved": "Participa",
         "i-1": "Ya seas un mirmecólogo experimentado o estés descubriendo el mundo de las hormigas, hay un lugar para ti en nuestra comunidad. ¡Únete a nuestra búsqueda para descubrir los secretos del mundo de las hormigas!",
         "contact me": "Contáctame"
+    },
+    "Contact": {
+        "title": "Contacto",
+        "page title": "¡Hablemos de tu proyecto!",
+        "description": "Transformemos tus ideas en resultados tangibles juntos. Como profesional independiente, sé lo que significa trabajar duro para alcanzar tus metas. Sin trucos ni promesas vacías, solo compromiso y dedicación para ayudarte a lograr tus objetivos.",
+        "question": "¿Listo para dar el primer paso?",
+        "hook": "¡Contáctame hoy mismo y comencemos!",
+        "form title": "¡Deja tus datos y y mismo me pondré en contacto contigo!",
+        "name": "Nombre",
+        "name placeholder": "Ingresa tu nombre",
+        "name required": "El nombre es obligatorio.",
+        "name too short": "El nombre debe tener al menos 3 caracteres.",
+        "name too long": "El nombre no puede exceder los 50 caracteres.",
+        "email": "Correo electrónico",
+        "email placeholder": "Ingresa tu correo electrónico",
+        "email required": "El correo es obligatorio.",
+        "email invalid": "El correo no tiene un formato válido.",
+        "subject": "Asunto",
+        "subject placeholder": "Asunto...",
+        "subject required": "El asunto es obligatorio.",
+        "subject too short": "El asunto debe tener al menos 3 caracteres",
+        "subject too long": "El asunto no puede exceder los 50 caracteres",
+        "message": "Mensaje",
+        "message placeholder": "Escribe tu mensaje",
+        "message required": "El mensaje es obligatorio.",
+        "message too short": "El mensaje debe tener al menos 10 caracteres.",
+        "message too long": "El mensaje no puede exceder los 1000 caracteres.",
+        "send message": "Enviar mensaje"
     }
 }

@@ -14,3 +14,5 @@ export * from './cards/info/InfoCard';
 export * from './cards/slider/PhotoSlider';
 export * from './cards/taxonomy-list/TaxonomyList';
 export * from './cards/map/MapFrame';
+
+export * from './snackbar/SnackBar';
