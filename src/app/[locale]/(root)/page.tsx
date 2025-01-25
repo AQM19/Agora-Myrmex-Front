@@ -2,6 +2,7 @@
 
 import { Pagination } from '@/components';
 import AntGridCard from '@/components/cards/ant_grid_card/AntGridCard';
+import SpinLoader from '@/components/ui/loader/SpinLoader';
 import { getPaginatedAnts, GridAnt } from '@/core';
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
@@ -11,7 +12,7 @@ export default function AntsPage() {
     const [ants, setAnts] = useState<GridAnt[]>([]);
     const [, setCurrentPage] = useState<number>(1);
     const [totalPages, setTotalPages] = useState<number>(0);
-    const [, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
     const [filter, setFilter] = useState<string>('');
     const [debouncedFilter, setDebouncedFilter] = useState('');
     const [numRegistry, setNumRegistry] = useState(12);
@@ -62,6 +63,16 @@ export default function AntsPage() {
 
     const handleNumRegistryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setNumRegistry(+event.target.value);
+    }
+
+    if (isLoading) {
+        return (
+            <div className='flex items-center justify-center h-96'>
+                <span className='text-3xl'>
+                    <SpinLoader />
+                </span>
+            </div>
+        )
     }
 
     return (

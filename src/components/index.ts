@@ -6,6 +6,7 @@ export * from './ui/local-switch/LocalSwitch';
 export * from './ui/side-menu-button/SideMenuButton';
 export * from './ui/pagination/Pagination';
 export * from './ui/no-data/NoData';
+export * from './ui/loader/SpinLoader';
 
 export * from './cards/ant_grid_card/AntGridCard';
 export * from './cards/temperature/TemperatureCard';
