@@ -1,6 +1,11 @@
 {
   "name": "agora-myrmex",
   "version": "1.0.0",
+  "author": {
+    "name": "Aarón Quintanal Martín",
+    "email": "aquintanalm.dev@gmail.com",
+    "url": "https://aaronquintanalmartin.com"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
