@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { host } from "@/config";
 
 import "./globals.css";
-import { routing } from "@/i18n/routing";
-import { notFound } from "next/navigation";
-import { getMessages } from "next-intl/server";
-import { NextIntlClientProvider } from "next-intl";
 import { Suspense } from "react";
 import Loading from "./loading";
+import ThemeProvider from "@/core/providers/ThemeProvider";
+import { routing } from "@/i18n/routing";
+import notFound from "./not-found";
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Agora Myrmex - Fichas de cría de hormigas",
@@ -100,11 +101,13 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Madrid">
-          <Suspense fallback={<Loading />}>
-            {children}
-          </Suspense>
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Madrid">
+            <Suspense fallback={<Loading />}>
+              {children}
+            </Suspense>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
