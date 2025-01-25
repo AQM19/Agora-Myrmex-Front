@@ -2,7 +2,6 @@ export * from './interfaces/ant/ant.interface';
 export * from './interfaces/locales//locale.interface';
 export * from './interfaces/common/mail.interface';
 
-export * from './services/ui/dark-mode-status.service';
 export * from './services/ui/sidebar-status.service';
 export * from './services/supabase/ants.service';
 
