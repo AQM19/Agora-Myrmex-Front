@@ -1,9 +1,7 @@
 'use client'
 
-import { useDarkModeStatus } from '@/core/services/ui/dark-mode-status.service'
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
-import { IoMoon, IoSunnyOutline } from 'react-icons/io5'
 
 const ThemeSwitch = () => {
 
