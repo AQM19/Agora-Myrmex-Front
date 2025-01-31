@@ -9,6 +9,7 @@ export interface MenuItems {
     | "/"
     | "/about"
     | "/contact"
+    | "/privacy"
     // | "/guides/how-to-start"
     // | "/guides/basic-equipment"
     // | "/guides/identification"

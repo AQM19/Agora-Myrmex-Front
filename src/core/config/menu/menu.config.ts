@@ -2,6 +2,7 @@ import { FaCircleInfo } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
 import { MenuItems } from "@/core/interfaces/menu/menu-items.interface";
 import { RiContactsLine } from "react-icons/ri";
+import { MdOutlinePrivacyTip } from "react-icons/md";
 
 export const MenuItemsConfig: MenuItems[] = [
     {
@@ -22,6 +23,12 @@ export const MenuItemsConfig: MenuItems[] = [
         label: 'contact',
         isAvaliable: true
     },
+    {
+        href: '/privacy',
+        icon: MdOutlinePrivacyTip,
+        label: 'privacy',
+        isAvaliable: true,
+    }
     // {
     //     label: 'basic guides',
     //     icon: IoBookOutline,

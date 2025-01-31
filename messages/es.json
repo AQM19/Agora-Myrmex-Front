@@ -22,7 +22,8 @@
         "good practices": "Buenas prácticas",
         "resources": "Recursos",
         "publications": "Publicaciones",
-        "forums": "Foros"
+        "forums": "Foros",
+        "privacy": "Política de privacidad"
     },
     "Ant details": {
         "Max": "Máximo",
@@ -85,6 +86,31 @@
         "get involved": "Participa",
         "i-1": "Ya seas un mirmecólogo experimentado o estés descubriendo el mundo de las hormigas, hay un lugar para ti en nuestra comunidad. ¡Únete a nuestra búsqueda para descubrir los secretos del mundo de las hormigas!",
         "contact me": "Contáctame"
+    },
+    "Privacy": {
+        "title": "Política de Privacidad",
+        "responsable": "Responsable del tratamiento de datos",
+        "responsable text": "El responsable de la recopilación y tratamiento de los datos personales proporcionados a través del formulario de contacto de este sitio web es ",
+        "recopiled data": "Datos que se recopilan",
+        "recopiled data text": "Al completar el formulario de contacto, se pueden recopilar los siguientes datos personales:",
+        "recopiled data item 1": "Nombre",
+        "recopiled data item 2": "Correo electrónico",
+        "recopiled data item 3": "Asunto",
+        "recopiled data item 4": "Mensaje",
+        "purpose of treatment": "Finalidad del tratamiento",
+        "purpose text": "Los datos proporcionados a través del formulario de contacto se utilizarán exclusivamente para responder a las consultas enviadas por el usuario.",
+        "conservation of data": "Conservación de los datos",
+        "conservation text": "Los datos serán almacenados únicamente durante el tiempo necesario para atender la solicitud y no serán compartidos con terceros ni utilizados con fines comerciales.",
+        "user rights": "Derechos del usuario",
+        "user rights text": "Como usuario, tienes derecho a:",
+        "user rights item 1": "Acceder, rectificar o eliminar tus datos personales.",
+        "user rights item 2": "Limitar u oponerte a su tratamiento.",
+        "user rights item 3": "Solicitar la portabilidad de tus datos.",
+        "user rights add": "Para ejercer estos derechos, puedes enviar una solicitud a ",
+        "security of data": "Seguridad de los datos",
+        "security text": "Se han implementado medidas de seguridad para garantizar la protección de los datos personales enviados a través del formulario.",
+        "contact": "Contacto",
+        "contact text": "Si tienes preguntas sobre esta política de privacidad, puedes escribir a "
     },
     "Contact": {
         "title": "Contacto",

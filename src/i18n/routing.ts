@@ -19,6 +19,10 @@ export const routing = defineRouting({
             'en': '/contact',
             'es': '/contacto',
         },
+        '/privacy': {
+            'en': '/privacy-policy',
+            'es': '/política-de-privacidad',
+        }
         // '/guides/how-to-start': {
         //     'en': '/guides/how-to-start',
         //     'es': '/guías/cómo-empezar',
