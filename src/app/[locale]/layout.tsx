@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
+import { getMessages } from "next-intl/server";
 import { host } from "@/config";
-
-import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
 import { Suspense } from "react";
 import Loading from "./loading";
-import ThemeProvider from "@/core/providers/ThemeProvider";
-import { routing } from "@/i18n/routing";
 import notFound from "./not-found";
-import { getMessages } from "next-intl/server";
-import { NextIntlClientProvider } from "next-intl";
+import ThemeProvider from "@/core/providers/ThemeProvider";
+import type { Metadata } from "next";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Agora Myrmex - Fichas de cría de hormigas",
@@ -105,6 +106,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
           <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Madrid">
             <Suspense fallback={<Loading />}>
               {children}
+              <Analytics />
             </Suspense>
           </NextIntlClientProvider>
         </ThemeProvider>
